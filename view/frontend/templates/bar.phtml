@@ -1,0 +1,6 @@
+<?php
+/** @var $block \LeSite\CustomBar\Block\Bar */
+
+if ($block->isActive()) {
+    echo __('Current customer group: %1', $block->getCurrentCustomerGroup()->getCode());
+}

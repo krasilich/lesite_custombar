@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="lesite" translate="label" sortOrder="10000">
+            <label>LeSite</label>
+        </tab>
+        <section id="custombar" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Custom Bar</label>
+            <tab>lesite</tab>
+            <resource>LeSite_CustomBar::settings</resource>
+            <group id="settings" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>Settings</label>
+                <field id="customer_group" translate="label" type="multiselect" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Customer Group</label>
+                    <source_model>LeSite\CustomBar\Model\Config\Source\CustomerGroups</source_model>
+                    <comment><![CDATA[Choose customer groups to show the banner.<br />Or unselect all values to disable feature completely.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
