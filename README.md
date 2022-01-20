@@ -1,4 +1,4 @@
-#LeSite Custom Bar
+# LeSite Custom Bar
 
 Module adds simple message on top of all pages.
 
