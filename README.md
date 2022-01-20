@@ -5,7 +5,7 @@ Module adds simple message on top of all pages.
 ## Installation
 
 - Add this repository to your ```composer.json``` ```https://github.com/krasilich/lesite_custombar.git```
-- Run ```composer require krasilich/lesite_cunstombar:0.1.0```
+- Run ```composer require krasilich/lesite_custombar:0.1.0```
 
 Example:
 ```json
