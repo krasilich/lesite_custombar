@@ -72,7 +72,7 @@ class Bar extends Template
 
         $configValues = $this->_scopeConfig->getValue(static::CUSTOMER_GROUP_CONFIG_PATH);
 
-        if (is_null($configValues)) {
+        if ($configValues === null) {
             return false;
         }
 

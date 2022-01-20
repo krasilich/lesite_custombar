@@ -1,6 +1,9 @@
 <?php
 /** @var $block \LeSite\CustomBar\Block\Bar */
+/** @var $escaper \Magento\Framework\Escaper */
 
 if ($block->isActive()) {
-    echo __('Current customer group: %1', $block->getCurrentCustomerGroup()->getCode());
+    echo $escaper->escapeHtml(
+        __('Current customer group: %1', $block->getCurrentCustomerGroup()->getCode())
+    );
 }
